@@ -12,7 +12,7 @@ pipeline {
         }
 		stage('Deploy') {
             steps {
-				sh 'docker run -d simple-npm:v1.0.0'
+				sh 'docker run -d -p 80:80 simple-npm:v1.0.0'
             }
         }
     }
