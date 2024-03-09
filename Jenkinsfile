@@ -1,5 +1,7 @@
 pipeline {
-    agent localhost-agent
+    agent {
+		label "localhost-agent"
+	}
     environment {
         CI = 'true'
     }
